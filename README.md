@@ -47,6 +47,15 @@ This project was extended into a fictitious **Tech Start-up** based in London, U
 
 ***
 
+## 🧩 Cisco Packet Tracer Simulation
+
+You can explore the complete GymLink LAN prototype in the `/simulation` directory:  
+➡️ [**GymLink-Network.pkt**](./simulation/GymLink-Network.pkt)
+
+This file includes all configurations described in the documentation and can be used to test VLAN segmentation, DHCP allocation, ACL policies, and firewall resilience.
+
+***
+
 ## **Project Documentation**
 
 The following sections summarise the technical and conceptual detail, as originally presented in the project report.

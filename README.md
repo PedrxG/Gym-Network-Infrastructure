@@ -86,5 +86,5 @@ For whoever interested, I will leave here a direct link to my assessment report 
 For any queries about this project or to discuss potential collaboration, please feel free to reach out.
 
 * **Pedro Gaetjens Molongua**
-* [LinkedIn](https://linkedin.com/in/pedro-g-a81978214) | [GitHub](https://github.com/PedrxG) :tw-1f331:
-* *\[pedrogaetjensmolongua@gmail.com]* :tw-1f4e9:
+* [LinkedIn](https://linkedin.com/in/pedro-g-a81978214) | [GitHub](https://github.com/PedrxG) 🌱
+* *\[pedrogaetjensmolongua@gmail.com]* 📧

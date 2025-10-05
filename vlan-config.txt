@@ -1,4 +1,11 @@
 !
+! ==========================================================
+!  GymLink VLAN Configuration File
+!  Author: Pedro Gaetjens Molongua
+!  Device: Core/Distribution Switch
+!  Purpose: VLAN Initialization and Naming
+! ==========================================================
+!
 ! Configure VLAN 10 (Management) - High privilege access
 Switch(config)# vlan 10
 Switch(config-vlan)# name Management

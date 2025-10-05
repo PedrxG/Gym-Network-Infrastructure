@@ -1,0 +1,72 @@
+!
+! ==========================================================
+!  GymLink DHCP Set-Up File
+!  Author: Pedro Gaetjens Molongua
+!  Device: Router (Main Gateway)
+!  Purpose: Router Configuration Using Cisco IOS Commands
+! ==========================================================
+!
+! FILE: dhcp-setup.txt
+! PROJECT: GymLink Network Infrastructure
+! DESCRIPTION: Configuration commands for setting up DHCP Pools 
+!              on the main Router for all five internal VLANs.
+!              The Router will act as the DHCP server for these subnets.
+! DATE: 2025-05-15 (Example Date)
+! ENGINEER: Pedro Gaetjens Molongua
+!
+! ------------------------------------------------------------------
+! 1. EXCLUDE RESERVED IP ADDRESSES (Gateways, Servers, etc.)
+!    Excluding the first 10 addresses of each subnet to reserve them for 
+!    static assignment (e.g., Router Subinterfaces, Servers).
+! ------------------------------------------------------------------
+
+Router(config)# ip dhcp excluded-address 192.168.10.1 192.168.10.10
+Router(config)# ip dhcp excluded-address 192.168.20.1 192.168.20.10
+Router(config)# ip dhcp excluded-address 192.168.30.1 192.168.30.10
+Router(config)# ip dhcp excluded-address 192.168.40.1 192.168.40.10
+Router(config)# ip dhcp excluded-address 192.168.50.1 192.168.50.10
+
+! ------------------------------------------------------------------
+! 2. DHCP POOL CONFIGURATION PER VLAN
+!    Each pool defines the network, subnet mask, and default gateway 
+!    (which is the router's subinterface IP).
+! ------------------------------------------------------------------
+
+! DHCP Pool for VLAN 10 (Management: 192.168.10.0/24)
+Router(config)# ip dhcp pool VLAN_10_MANAGEMENT
+Router(config-dhcp)# network 192.168.10.0 255.255.255.0
+Router(config-dhcp)# default-router 192.168.10.1
+Router(config-dhcp)# exit
+
+! DHCP Pool for VLAN 20 (Staff: 192.168.20.0/24)
+Router(config)# ip dhcp pool VLAN_20_STAFF
+Router(config-dhcp)# network 192.168.20.0 255.255.255.0
+Router(config-dhcp)# default-router 192.168.20.1
+Router(config-dhcp)# exit
+
+! DHCP Pool for VLAN 30 (Customer Service: 192.168.30.0/24)
+Router(config)# ip dhcp pool VLAN_30_CUST_SERVICE
+Router(config-dhcp)# network 192.168.30.0 255.255.255.0
+Router(config-dhcp)# default-router 192.168.30.1
+Router(config-dhcp)# exit
+
+! DHCP Pool for VLAN 40 (IT: 192.168.40.0/24)
+Router(config)# ip dhcp pool VLAN_40_IT
+Router(config-dhcp)# network 192.168.40.0 255.255.255.0
+Router(config-dhcp)# default-router 192.168.40.1
+Router(config-dhcp)# exit
+
+! DHCP Pool for VLAN 50 (Guest Wi-Fi: 192.168.50.0/24)
+Router(config)# ip dhcp pool VLAN_50_GUEST
+Router(config-dhcp)# network 192.168.50.0 255.255.255.0
+Router(config-dhcp)# default-router 192.168.50.1
+Router(config-dhcp)# exit
+
+
+! ------------------------------------------------------------------
+! Verification Command:
+! Router# show ip dhcp pool
+! ------------------------------------------------------------------
+!
+! --- END DHCP CONFIGURATION ---
+!

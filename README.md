@@ -8,6 +8,8 @@ This repository contains the full documentation and implementation details for *
 
 The primary goal was to create a secure, fast, and reliable network that supports modern fitness facility operations—including internal staff communication, a file server, and segregated customer Wi-Fi access—while applying practical network security measures like **VLAN segmentation** and **Access Control Lists (ACLs)**.
 
+![GymLink Network Topology](https://res.cloudinary.com/df9vvy76v/image/upload/v1759662570/GymLink-Network-Topology/GymLink-Network-Topology_wjzss5.png)
+
 ***
 
 ## **Key Features & Technologies**

@@ -1,4 +1,4 @@
-# 🏋️ **GymLink** | Network Infrastructure and Management Application
+# **GymLink** | Network Infrastructure and Management Application
 
 ***
 
@@ -47,10 +47,10 @@ This project was extended into a fictitious **Tech Start-up** based in London, U
 
 ***
 
-## 🧩 Cisco Packet Tracer Simulation
+## Cisco Packet Tracer Simulation
 
 You can explore the complete GymLink LAN prototype in the `/simulation` directory:  
-➡️ [**GymLink-Network.pkt**](./simulation/GymLink-Network.pkt)
+- [**GymLink-Network.pkt**](./simulation/GymLink-Network.pkt)
 
 This file includes all configurations described in the documentation and can be used to test VLAN segmentation, DHCP allocation, ACL policies, and firewall resilience.
 
@@ -95,5 +95,5 @@ For whoever interested, I will leave here a direct link to my assessment report 
 For any queries about this project or to discuss potential collaboration, please feel free to reach out.
 
 * **Pedro Gaetjens Molongua**
-* [LinkedIn](https://linkedin.com/in/pedro-g-a81978214) | [GitHub](https://github.com/PedrxG) 🌱
-* *\[pedrogaetjensmolongua@gmail.com]* 📧
+* [LinkedIn](https://linkedin.com/in/pedro-g-a81978214) | [GitHub](https://github.com/PedrxG) 
+* *\[pedrogaetjensmolongua@gmail.com]* 
